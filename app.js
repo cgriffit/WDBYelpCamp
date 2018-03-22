@@ -17,7 +17,8 @@ var commentRoutes = require("./routes/comments"),
     indexRoutes = require("./routes/index");
 
 // seedDB();    //seed the database
-mongoose.connect("mongodb://localhost/yelp_camp");
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb://cgriffith:edwin73@ds221609.mlab.com:21609/cgyelpcamp");
 app.use(bodyParser.urlencoded({extended: true}));
 //__dirname will always be the directory that the script lives in - it's safer to include
 app.use(express.static(__dirname + "/public"));
